@@ -9,11 +9,11 @@ Alo - Server Probe. A Light-weight PHP-Based Server Probe. Shows details of the 
 
 ### Installing/Configuring
 
-´´´bash
+```bash
 cd "/var/www/web/ispconfig/"
 wget https://raw.githubusercontent.com/Asif2BD/Alo/master/alo.php
 chown -r ispconfig:ispconfig /var/www/web/ispconfig/
-´´´
+```
 
 ## phpRedisAdmin
 
@@ -29,12 +29,12 @@ You can find an example database at http://dubbelboer.com/phpRedisAdmin/
 
 ### Installing/Configuring
 
-´´´bash
+```bash
 cd "/var/www/web/ispconfig/"
 git clone https://github.com/ErikDubbelboer/phpRedisAdmin.git
 cd phpRedisAdmin
 git clone https://github.com/nrk/predis.git vendor
 chown -r ispconfig:ispconfig /var/www/web/ispconfig/
-´´´
+```
 
 
