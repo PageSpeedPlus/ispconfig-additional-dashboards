@@ -13,7 +13,8 @@ chmod -Rf 750 /usr/local/ispconfig/interface/web
 
 ```bash
 cd /usr/local/ispconfig/interface/web
-wget https://raw.githubusercontent.com/PageSpeed-Ninjas/ispconfig-additional-dashboards/master/memcached/memcached.php
+mkdir memecached
+wget https://raw.githubusercontent.com/PageSpeed-Ninjas/ispconfig-additional-dashboards/master/memcached/index.php
 chown -Rf ispconfig:ispconfig /usr/local/ispconfig/interface/web
 chmod -Rf 750 /usr/local/ispconfig/interface/web
 ```
