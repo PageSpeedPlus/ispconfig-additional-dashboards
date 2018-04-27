@@ -1,5 +1,23 @@
 # ISPConfig Additional Dashboards
 
+## OPcache Statistik
+
+```bash
+cd /usr/local/ispconfig/interface/web
+wget https://raw.githubusercontent.com/PageSpeed-Ninjas/ispconfig-additional-dashboards/master/opcache/opcache.php
+chown -Rf ispconfig:ispconfig /usr/local/ispconfig/interface/web
+chmod -Rf 750 /usr/local/ispconfig/interface/web
+```
+
+## Memecached Dashboard
+
+```bash
+cd /usr/local/ispconfig/interface/web
+wget https://raw.githubusercontent.com/PageSpeed-Ninjas/ispconfig-additional-dashboards/master/memcached/memcached.php
+chown -Rf ispconfig:ispconfig /usr/local/ispconfig/interface/web
+chmod -Rf 750 /usr/local/ispconfig/interface/web
+```
+
 ## Alo Server
 
 Alo - Server Probe. A Light-weight PHP-Based Server Probe. Shows details of the hosting server.
@@ -10,9 +28,9 @@ Alo - Server Probe. A Light-weight PHP-Based Server Probe. Shows details of the 
 ### Installing/Configuring
 
 ```bash
-cd "/var/www/web/ispconfig/"
+cd /var/www/clients/client1/web1/web
 wget https://raw.githubusercontent.com/Asif2BD/Alo/master/alo.php
-chown -r ispconfig:ispconfig /var/www/web/ispconfig/
+chown -Rf client1:web1 /var/www/clients/client1/web1/web
 ```
 
 ## phpRedisAdmin
@@ -30,11 +48,11 @@ You can find an example database at http://dubbelboer.com/phpRedisAdmin/
 ### Installing/Configuring
 
 ```bash
-cd "/var/www/web/ispconfig/"
+cd /var/www/clients/client1/web1/web
 git clone https://github.com/ErikDubbelboer/phpRedisAdmin.git
 cd phpRedisAdmin
 git clone https://github.com/nrk/predis.git vendor
-chown -r ispconfig:ispconfig /var/www/web/ispconfig/
+chown -Rf client1:web1 /var/www/clients/client1/web1/web
 ```
 
 
